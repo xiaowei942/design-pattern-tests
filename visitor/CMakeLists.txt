@@ -1,0 +1,19 @@
+CMAKE_MINIMUM_REQUIRED (VERSION 2.8)
+
+SET (CMAKE_BUILD_TYPE DEBUG)
+
+SET (CMAKE_ALLOW_LOOSE_LOOP_CONSTRUCTS ON)
+
+INCLUDE_DIRECTORIES (
+	.
+	)
+
+SET (VISITOR_SRC_FILES
+	Visitor.cpp
+	ConcreteElementA.cpp
+	ConcreteElementB.cpp
+	ConcreteVisitorA.cpp
+	ConcreteVisitorB.cpp
+	Main.cpp)
+
+ADD_EXECUTABLE (Visitor ${VISITOR_SRC_FILES})
